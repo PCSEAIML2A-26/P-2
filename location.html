@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Tracker</title>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css">
+    <link rel="stylesheet" href="location_s.css">
+</head>
+<body>
+
+    <div class="main">
+        <nav>
+            <a href="index.html"><span><img width="53" src="assets/images/logo_ns.svg"></span></a>
+            <div class="buttons">
+                <div class="dropdown" onclick="toggleDropdown()">
+                    <button class="btn">Features</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="symptom.html">Symptom Checker</a>
+                        <a href="location.html">Location Tracking</a>
+                        <a href="emergency.html">Emergency Contact Portal</a>
+                        <a href="safety.html">Safety Tips</a>
+                    </div>
+                </div>
+                <a href="login.html"><button class="btn btn-s">Sign In</button></a>
+                <button class="btn btn-a">About Us</button>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <div class="heading">
+            <span>LOCATION TRACKER</span>
+        </div>
+        <div class="separation"></div>
+    </div>
+
+    <div class="content">
+        <div class="card">  <div id="map"></div> </div>
+        <div class="content-btn">
+            <button class="button" onclick="showNearbyHospitals()">Show Hospitals Near Me</button>
+            <button class="button" onclick="showNearbyPoliceStations()">Show Police Stations Near Me</button>
+        </div>
+       
+    </div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script src="location_j.js"></script>
+</body>
+</html>
