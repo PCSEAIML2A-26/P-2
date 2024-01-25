@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  background-image: url("assets/images/location_bg.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 444px;
+  position: relative;
+}
+
+.main .box {
+  height: 444px;
+  width: 100%;
+  opacity: 0.71;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 88vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  width: 231px;
+  position: relative;
+  z-index: 10;
+  padding-top: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 7px;
+  position: relative;
+  z-index: 10;
+}
+
+.btn-s,
+.btn-a {
+  font-weight: normal;
+  background-color: rgb(240, 255, 255, 0);
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 5px;
+  border-radius: 7px;
+  position: absolute;
+  background-color: rgba(249, 249, 249, 0.65);
+  min-width: 190px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.heading {
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  font-weight: bolder;
+  font-size: 67px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading > :first-child {
+  margin-bottom: 86px;
+  text-shadow: 0 0 11px rgb(105, 0, 255);
+  z-index: 20px;
+}
+
+.separation {
+  height: 7px;
+  background-color: grey;
+  position: relative;
+  z-index: 20;
+}
+
+.content {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(218, 186, 255, 0.911);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 120px;
+  margin: 0;
+}
+
+.card {
+  height: 400px;
+  width: 44vw;
+  border-radius: 10px;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: 0px 0px 10px 2.5px rgba(73, 10, 155, 0.834);
+  z-index: 20px;
+}
+
+.content-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#map {
+  height: 400px;
+}
+
+.button {
+  width: 100%;
+  font-size: 22px;
+  padding: 19px 6px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #8181ff;
+}
+
+.button:hover {
+  background-color: rgba(45, 45, 214, 0.75);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
